@@ -30,12 +30,14 @@ namespace GeoLocation
                         Timeout = TimeSpan.FromSeconds(30)
 
                     }, new System.Threading.CancellationToken());
+                    
                 }
                 if (location != null)
                 {
                     Cooridates.Text = $"Latitude is {location.Latitude} Longitude is {location.Longitude}";
                     Direction.Text = $"Direction is {location.Course}";
                     Speed.Text = $"Speed is {location.Speed}";
+                    DistanceToLA.Text = $"Distance to Los Angeles is {location.CalculateDistance(34.0522300, -118.2436800, DistanceUnits.Miles)}";
                 }
             }
             catch (Exception ex)

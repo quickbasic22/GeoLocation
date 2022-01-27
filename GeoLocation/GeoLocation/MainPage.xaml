@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GeoLocation.MainPage">
+
+    <StackLayout>
+        <Label x:Name="Cooridates" Text="Cooridates" />
+        <Label x:Name="Direction" Text="Direction" />
+        <Label x:Name="Speed" Text="Speed" />
+        <Button x:Name="GetLocation" Text="GetLocation" Clicked="GetLocation_Clicked" />
+    </StackLayout>
+
+</ContentPage>
